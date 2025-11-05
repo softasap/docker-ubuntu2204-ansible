@@ -45,3 +45,5 @@ RUN rm -f /lib/systemd/system/systemd*udev* \
 
 VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
 CMD ["/lib/systemd/systemd"]
+
+COPY ansible.cfg /etc/ansible
